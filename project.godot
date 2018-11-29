@@ -12,6 +12,8 @@ config_version=3
 
 config/name="TowerDefence"
 run/main_scene="res://World.tscn"
+boot_splash/image="res://IMG_20180216_204859.png"
+boot_splash/fullsize=false
 config/icon="res://icon.png"
 
 [rendering]
