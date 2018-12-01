@@ -11,10 +11,10 @@
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 4.76268
+extents = Vector2( 10, 10 )
 
 [node name="World" type="Node" index="0"]
 
@@ -29,7 +29,7 @@ _sections_unfolded = [ "Pause" ]
 [node name="StaticBody2D" type="StaticBody2D" parent="Walls" index="0"]
 
 editor/display_folded = true
-position = Vector2( 544, 576 )
+position = Vector2( -578.405, 368.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -37,6 +37,7 @@ constant_linear_velocity = Vector2( 0, 0 )
 constant_angular_velocity = 0.0
 friction = 1.0
 bounce = 0.0
+_sections_unfolded = [ "Collision", "Material", "Pickable", "Visibility" ]
 __meta__ = {
 "_edit_group_": true
 }
@@ -49,11 +50,12 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/StaticBody2D" index="1"]
 
 shape = SubResource( 1 )
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
 [node name="StaticBody2D24" type="StaticBody2D" parent="Walls" index="1"]
 
 editor/display_folded = true
-position = Vector2( 160, 320 )
+position = Vector2( -962.405, 112.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -77,7 +79,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D10" type="StaticBody2D" parent="Walls" index="2"]
 
 editor/display_folded = true
-position = Vector2( 352, 576 )
+position = Vector2( -770.405, 368.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -101,7 +103,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D17" type="StaticBody2D" parent="Walls" index="3"]
 
 editor/display_folded = true
-position = Vector2( 544, 384 )
+position = Vector2( -578.405, 176.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -125,7 +127,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D4" type="StaticBody2D" parent="Walls" index="4"]
 
 editor/display_folded = true
-position = Vector2( 544, 768 )
+position = Vector2( -578.405, 560.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -149,7 +151,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D19" type="StaticBody2D" parent="Walls" index="5"]
 
 editor/display_folded = true
-position = Vector2( 352, 448 )
+position = Vector2( -770.405, 240.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -173,7 +175,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D23" type="StaticBody2D" parent="Walls" index="6"]
 
 editor/display_folded = true
-position = Vector2( 544, 256 )
+position = Vector2( -578.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -197,7 +199,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D7" type="StaticBody2D" parent="Walls" index="7"]
 
 editor/display_folded = true
-position = Vector2( 480, 768 )
+position = Vector2( -642.405, 560.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -221,7 +223,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D20" type="StaticBody2D" parent="Walls" index="8"]
 
 editor/display_folded = true
-position = Vector2( 288, 448 )
+position = Vector2( -834.405, 240.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -245,7 +247,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D21" type="StaticBody2D" parent="Walls" index="9"]
 
 editor/display_folded = true
-position = Vector2( 480, 256 )
+position = Vector2( -642.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -269,7 +271,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D8" type="StaticBody2D" parent="Walls" index="10"]
 
 editor/display_folded = true
-position = Vector2( 416, 768 )
+position = Vector2( -706.405, 560.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -293,7 +295,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D18" type="StaticBody2D" parent="Walls" index="11"]
 
 editor/display_folded = true
-position = Vector2( 224, 448 )
+position = Vector2( -898.405, 240.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -317,7 +319,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D22" type="StaticBody2D" parent="Walls" index="12"]
 
 editor/display_folded = true
-position = Vector2( 416, 256 )
+position = Vector2( -706.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -341,7 +343,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D28" type="StaticBody2D" parent="Walls" index="13"]
 
 editor/display_folded = true
-position = Vector2( 288, 256 )
+position = Vector2( -834.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -365,7 +367,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D9" type="StaticBody2D" parent="Walls" index="14"]
 
 editor/display_folded = true
-position = Vector2( 352, 768 )
+position = Vector2( -770.405, 560.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -389,7 +391,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D2" type="StaticBody2D" parent="Walls" index="15"]
 
 editor/display_folded = true
-position = Vector2( 544, 512 )
+position = Vector2( -578.405, 304.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -413,7 +415,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D25" type="StaticBody2D" parent="Walls" index="16"]
 
 editor/display_folded = true
-position = Vector2( 160, 256 )
+position = Vector2( -962.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -437,7 +439,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D11" type="StaticBody2D" parent="Walls" index="17"]
 
 editor/display_folded = true
-position = Vector2( 352, 512 )
+position = Vector2( -770.405, 304.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -461,7 +463,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D15" type="StaticBody2D" parent="Walls" index="18"]
 
 editor/display_folded = true
-position = Vector2( 544, 320 )
+position = Vector2( -578.405, 112.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -485,7 +487,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D5" type="StaticBody2D" parent="Walls" index="19"]
 
 editor/display_folded = true
-position = Vector2( 544, 704 )
+position = Vector2( -578.405, 496.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -509,7 +511,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D26" type="StaticBody2D" parent="Walls" index="20"]
 
 editor/display_folded = true
-position = Vector2( 160, 448 )
+position = Vector2( -962.405, 240.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -533,7 +535,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D12" type="StaticBody2D" parent="Walls" index="21"]
 
 editor/display_folded = true
-position = Vector2( 352, 704 )
+position = Vector2( -770.405, 496.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -557,7 +559,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D14" type="StaticBody2D" parent="Walls" index="22"]
 
 editor/display_folded = true
-position = Vector2( 544, 446.892 )
+position = Vector2( -578.405, 239.741 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -578,7 +580,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D16" type="StaticBody2D" parent="Walls" index="23"]
 
 editor/display_folded = true
-position = Vector2( 352, 256 )
+position = Vector2( -770.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -602,7 +604,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D29" type="StaticBody2D" parent="Walls" index="24"]
 
 editor/display_folded = true
-position = Vector2( 224, 256 )
+position = Vector2( -898.405, 48.8489 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -623,7 +625,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D6" type="StaticBody2D" parent="Walls" index="25"]
 
 editor/display_folded = true
-position = Vector2( 544, 640 )
+position = Vector2( -578.405, 432.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -644,7 +646,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D27" type="StaticBody2D" parent="Walls" index="26"]
 
 editor/display_folded = true
-position = Vector2( 160, 384 )
+position = Vector2( -962.405, 176.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -665,7 +667,7 @@ shape = SubResource( 1 )
 [node name="StaticBody2D13" type="StaticBody2D" parent="Walls" index="27"]
 
 editor/display_folded = true
-position = Vector2( 352, 640 )
+position = Vector2( -770.405, 432.849 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -683,7 +685,7 @@ texture = ExtResource( 2 )
 
 shape = SubResource( 1 )
 
-[node name="TileMap" type="TileMap" parent="." index="1"]
+[node name="floor" type="TileMap" parent="." index="1"]
 
 mode = 0
 tile_set = ExtResource( 3 )
@@ -701,46 +703,59 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray(  )
+tile_data = PoolIntArray( -327673, 24, 0, -262137, 24, 0, -196601, 24, 0, -131065, 24, 0, -65529, 24, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 24, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 65536, 29, 0, 65537, 25, 0, 65538, 25, 0, 65539, 25, 0, 65540, 25, 0, 65541, 25, 0, 65542, 25, 0, 65543, 28, 0, 65544, 25, 0, 65545, 25, 0, 65546, 25, 0, 65547, 25, 0, 65548, 25, 0, 65549, 25, 0, 65550, 25, 0, 65551, 30, 0, 131072, 24, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0, 131078, 0, 0, 131079, 0, 0, 131080, 0, 0, 131081, 0, 0, 131082, 0, 0, 131083, 0, 0, 131084, 0, 0, 131085, 0, 0, 131086, 0, 0, 131087, 24, 0, 196608, 24, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 0, 196614, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196618, 0, 0, 196619, 0, 0, 196620, 0, 0, 196621, 0, 0, 196622, 0, 0, 196623, 24, 0, 262144, 34, 0, 262145, 25, 0, 262146, 25, 0, 262147, 25, 0, 262148, 25, 0, 262149, 25, 0, 262150, 25, 0, 262151, 27, 0, 262152, 25, 0, 262153, 25, 0, 262154, 25, 0, 262155, 25, 0, 262156, 25, 0, 262157, 25, 0, 262158, 25, 0, 262159, 35, 0, 327680, 0, 0, 327681, 0, 0, 327682, 0, 0, 327683, 0, 0, 327684, 0, 0, 327685, 0, 0, 327686, 0, 0, 327687, 24, 0, 327688, 0, 0, 327689, 29, 0, 327690, 25, 0, 327691, 25, 0, 327692, 25, 0, 327693, 25, 0, 327694, 25, 0, 327695, 30, 0, 393216, 29, 0, 393217, 25, 0, 393218, 25, 0, 393219, 25, 0, 393220, 25, 0, 393221, 25, 0, 393222, 25, 0, 393223, 35, 0, 393224, 0, 0, 393225, 24, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 393230, 0, 0, 393231, 24, 0, 458752, 24, 0, 458753, 0, 0, 458754, 0, 0, 458755, 0, 0, 458756, 0, 0, 458757, 0, 0, 458758, 0, 0, 458759, 0, 0, 458760, 0, 0, 458761, 24, 0, 458762, 0, 0, 458763, 0, 0, 458764, 0, 0, 458765, 0, 0, 458766, 0, 0, 458767, 24, 0, 524288, 34, 0, 524289, 25, 0, 524290, 25, 0, 524291, 25, 0, 524292, 25, 0, 524293, 25, 0, 524294, 25, 0, 524295, 25, 0, 524296, 25, 0, 524297, 35, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 24, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 29, 0, 589832, 25, 0, 589833, 25, 0, 589834, 25, 0, 589835, 25, 0, 589836, 25, 0, 589837, 25, 0, 589838, 25, 0, 589839, 35, 0, 655367, 24, 0, 720903, 0, 0, 786439, 0, 0, 851975, 0, 0 )
 _sections_unfolded = [ "Cell" ]
 
-[node name="Player" type="KinematicBody2D" parent="." index="2"]
+[node name="walls" type="TileMap" parent="." index="2"]
+
+position = Vector2( 0, -5.16235 )
+mode = 0
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( -327674, 19, 0, -327673, 19, 0, -327672, 19, 0, -262138, 19, 0, -262137, 52, 0, -262136, 19, 0, -196602, 19, 0, -196600, 19, 0, -131066, 19, 0, -131064, 19, 0, -65530, 19, 0, -65528, 19, 0, 65535, 19, 0, 0, 19, 0, 1, 19, 0, 2, 19, 0, 3, 19, 0, 4, 19, 0, 5, 19, 0, 6, 19, 0, 8, 19, 0, 9, 19, 0, 10, 19, 0, 11, 19, 0, 12, 19, 0, 13, 19, 0, 14, 19, 0, 15, 19, 0, 16, 19, 0, 131071, 19, 0, 65552, 19, 0, 196607, 19, 0, 131088, 19, 0, 262143, 19, 0, 196624, 19, 0, 327679, 19, 0, 262160, 19, 0, 393215, 19, 0, 327696, 19, 0, 458751, 19, 0, 393232, 19, 0, 524287, 19, 0, 458768, 19, 0, 589823, 19, 0, 524304, 19, 0, 655359, 19, 0, 589840, 19, 0, 720895, 19, 0, 655360, 19, 0, 655361, 19, 0, 655362, 19, 0, 655363, 19, 0, 655364, 19, 0, 655365, 19, 0, 655366, 19, 0, 655368, 19, 0, 655369, 19, 0, 655370, 19, 0, 655371, 19, 0, 655372, 19, 0, 655373, 19, 0, 655374, 19, 0, 655375, 19, 0, 655376, 19, 0, 720902, 19, 0, 720903, 56, 0, 720904, 19, 0, 786438, 19, 0, 786439, 57, 0, 786440, 19, 0, 851974, 19, 0, 851975, 19, 0, 851976, 19, 0 )
+_sections_unfolded = [ "Cell", "Collision" ]
+
+[node name="Player" type="KinematicBody2D" parent="." index="3"]
 
 editor/display_folded = true
-position = Vector2( 465.308, 433.621 )
+position = Vector2( 1020.7, 599.261 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 4 )
-__meta__ = {
-"_edit_group_": true
-}
+_sections_unfolded = [ "Pickable", "collision" ]
 
 [node name="Sprite" type="Sprite" parent="Player" index="0"]
 
 texture = ExtResource( 5 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="1"]
 
-position = Vector2( 0.509705, -0.592377 )
-scale = Vector2( -6.21948, 6.47077 )
+position = Vector2( -0.0628831, 0.699632 )
+scale = Vector2( -3.28153, 3.3091 )
 shape = SubResource( 2 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Camera2D" type="Camera2D" parent="Player" index="2"]
 
-position = Vector2( -2.80162, 0 )
-scale = Vector2( 0.989191, 1 )
+position = Vector2( 86.252, 0.329895 )
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 1, 1 )
+zoom = Vector2( 2, 2 )
 limit_left = -10000000
 limit_top = -10000000
 limit_right = 10000000
@@ -759,6 +774,6 @@ drag_margin_bottom = 0.2
 editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
-_sections_unfolded = [ "Transform", "Visibility" ]
+_sections_unfolded = [ "Transform" ]
 
 
