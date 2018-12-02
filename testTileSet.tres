@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 56.4104, 23.0154 )
+extents = Vector2( 64.0683, 63.8358 )
 
 [resource]
 
@@ -192,7 +192,7 @@ extents = Vector2( 56.4104, 23.0154 )
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "shape": SubResource( 1 ),
-"shape_transform": Transform2D( 3.31166, 0, 0, 9.03518, 64.212, 72.0089 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 64, 64 )
 } ]
 20/name = "Sprite21"
 20/texture = ExtResource( 1 )

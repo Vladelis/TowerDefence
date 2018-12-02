@@ -5,9 +5,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 56.4104, 23.0154 )
+extents = Vector2( 64.0683, 63.8358 )
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
@@ -171,8 +171,6 @@ _sections_unfolded = [ "Region" ]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sprite20" index="0"]
 
-position = Vector2( 2.50891, -2.9516 )
-scale = Vector2( 0.984763, 0.642688 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -184,8 +182,6 @@ _sections_unfolded = [ "Collision", "Material", "Pickable", "Transform", "Visibi
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite20/StaticBody2D" index="0"]
 
-position = Vector2( 0.211975, 8.00891 )
-scale = Vector2( 3.31166, 9.03518 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
 
